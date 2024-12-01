@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your Cart | Ecommerce website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/387e3be71a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div id="logo">
+                <img src="./images/logo.png" width="250px">
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="#testimonial">About</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+                <a href="cart.html"><img src="./images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon">
+            </nav>
+        </div>
+    </div>
+
+    <div class="small-container cart">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>SubTotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-1.jpg">
+                        <div>
+                            <h2>Red T-Shirt</h2>
+                            <h4>Price: 500</h4>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1" max="10"></td>
+                <td>Rs. 500</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-2.jpg">
+                        <div>
+                            <h2>Black Shoes</h2>
+                            <h4>Price: 800</h4>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1" max="10"></td>
+                <td>Rs. 800</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-3.jpg">
+                        <div>
+                            <h2>Black Jeans</h2>
+                            <h4>Price: 1500</h4>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1" max="10"></td>
+                <td>Rs. 1500</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>SubTotal:</td>
+                    <td>Rs. 2800</td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>      
+                    <td>Rs. 200</td>
+                </tr>
+                <tr>
+                    <td>Discount:</td> 
+                    <td>Rs. 500</td>
+                </tr>
+                    <td>Total:</td>    
+                    <td>Rs. 2500</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h2>Download our App</h2>
+                    <p>Download for android and ios device</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <h4>Elevate Your Retail Experience <br> - Explore, Shop, Smile.</h4>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Blog</li>
+                        <li>Return Policy</li>
+                        <li>Terms and Conditions</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Facebook</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright - All rights reserved &copy 2023 | REDSTORE</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

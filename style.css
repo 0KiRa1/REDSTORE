@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+html, body {
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.header {
+    background: linear-gradient(#fff, #ffd6d6);
+}
+
+.container {
+    max-width: 1500px;
+    padding: 0 25px 0 25px;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar .logo img {
+    margin-top: 150px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    font-size: larger;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration:none ;  
+    color: black;
+}
+
+.row {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+#col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+#col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(255, 72, 0);
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin: 25px 0;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background: rgb(161, 25, 25);
+}
+
+.categories {
+    margin: 70px 0;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 25px 0 25px;
+}
+
+#col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+#col-3 img {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    margin: 0 auto 80px;
+}
+.title::after {
+    content: '';
+    background: orange;
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+#col-4 {
+    flex-basis: 25%;
+    min-width: 200px;
+    padding: 10px;
+    margin-bottom: 70px;
+    transition: transform 0.5s;
+}
+
+#col-4 img {
+    width: 100%;
+}
+
+#col-4 img:hover {
+    transform: translateY(-5px);
+}
+
+#col-4 {
+    font-size: 15px;
+}
+
+#rating {
+    color: orange;
+}
+
+.offer {
+    padding: 30px 0;
+    background: linear-gradient(#ffd6d6, #fff);
+}
+
+.offer .offer-img {
+    padding: 50px;
+}
+
+#testimonial {
+    padding-top: 40px;
+}
+
+#testimonial #col-3 {
+    text-align: center;
+    padding: 20px 20px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#testimonial #col-3 img {
+    border-radius: 50%;
+    width: 50px;
+    margin-top: 20px;
+}
+
+#testimonial #col-3:hover {
+    transform: translateY(-10px);
+}
+
+#testimonial #col-3 p {
+    margin-bottom: 10px;
+}
+
+#testimonial #col-3 .fa-quote-left {
+    font-size: 25px;
+    color: lightsalmon;
+}
+
+.brands {
+    margin: 70px auto;
+}
+
+#col-5 {
+    width: 150px;
+}
+
+#col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+#col-5 img:hover {
+    filter: grayscale(0);
+}
+
+#footer {
+    background: black;
+    color: #8a8a8a;
+    font-size: 15px;
+    padding: 60px 0 20px;
+}
+
+#footer h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+#footer-col-1, #footer-col-2, #footer-col-3, #footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+#footer-col-1 {
+    flex-basis: 30%;
+}
+
+.app-logo img {
+    width: 150px;
+}
+
+#footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+#footer-col-2 img {
+    margin-top: 5px;
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+#footer-col-3, #footer-col-4 {
+    flex-basis: 15%;
+    text-align: center;
+}
+
+ul {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    margin: 20px 0;
+    background: #b5b5b5;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+/* --------All products--------- */
+.row-2 {
+    justify-content: space-between;
+}
+
+select {
+    padding: 5px;
+    border: 1px solid rgb(148, 26, 26);
+}
+
+select:focus {
+    outline: none;
+}
+
+.product-btn {
+    margin: 10px auto 70px;
+}
+
+.product-btn span {
+    font-weight: bold;
+    border: 1px solid rgb(255, 81, 0);
+    margin-left: 10px;
+    padding: 15px;
+
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-btn span:hover {
+    background-color: rgb(255, 81, 0);
+}
+
+
+/* ---------Single Product----------- */
+
+.single-product {
+    margin-top: 80px;
+}
+
+.single-product #col-2 img {
+    width: 100%;
+    padding: 0;
+}
+
+.single-product #col-2 {
+    padding: 20px;
+}
+
+.single-product h4 {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.single-product select {
+    padding: 10px;
+    margin-top: 20px;
+    display: block;
+}
+
+.single-product input {
+    width: 50px;
+    height: 30px;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    border: 1px solid rgb(160, 57, 10);
+}
+
+input:focus {
+    outline: none;
+}
+
+.fa-indent {
+    margin-left: 10px;
+    color: rgb(241, 139, 6);
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+/* ----------cart--------- */
+
+.cart {
+    margin: 80px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 5px 10px;
+    color: white;
+    background-color: rgba(255, 81, 0, 0.925);
+    font-size: larger;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+td {
+    padding: 20px;
+}
+
+td input {
+    padding: 5px;
+    width: 40px;
+    height: 30px;
+}
+
+td a {
+    font-weight: bold;
+}
+
+td img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table {
+    font-size: larger;
+    font-weight: bold;
+    border-top: 5px solid rgb(255, 136, 0);
+    width: 100%;
+    max-width: 400px;
+}
+
+.total-price table tr td {
+    padding: 10px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+/* ------account------- */
+.account {
+    padding: 50px 0;
+    background: linear-gradient(#fff, #ffd6d6);;
+}
+
+.form-container {
+    background: white ;
+    width: 300px;
+    height: 350px;
+    margin: auto;
+    padding: 20px 0;
+    position: relative;
+    box-shadow: 0 0 20px 0px (0,0,0,0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-btn {
+    display: inline-block;
+}
+
+form {
+    padding: 0 20px;
+    max-width: 300px;
+    position: absolute;
+    top: 100px;
+    transition: transform 1s;
+}
+
+form input {
+    margin: 10px 0;
+    padding: 0 10px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.form .btn:focus {
+    outline: none;
+}
+
+#login-form {
+    left: -300px;
+}
+
+#login-form a {
+    font-size: 15px;
+}
+
+#reg-form {
+    left: 0;
+}
+
+#indicator {
+    width: 80px;
+    border: none;
+    height: 5px;
+    margin-top: 5px;
+    background: orange;
+    transform: translateX(72px);
+    transition: transform 1s;
+}
+
+
+@media only screen and (max-width: 850px) {
+    nav ul {
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: maxHeight 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 50px 10px 0;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .row {
+        text-align: center;
+    }
+
+    #col-2, #col-3, #col-4 {
+        flex-basis: 100%;
+    }
+
+    .single-product .row {
+        text-align: left;
+    }
+
+    .single-product #col-2 {
+        padding: 20px 0;
+    }
+}
